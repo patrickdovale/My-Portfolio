@@ -1,6 +1,7 @@
 import React from 'react';
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 import { AiFillEye, AiFillGithub } from 'react-icons/ai';
+import { i18n } from '../../translate/i18n';
 
 
 
@@ -30,7 +31,7 @@ export default function SideBarProject({ Projects, setSelectProject ,selectProje
     return (
         <div className="project-col-1">
             <div className="header-projects">
-                <h1>My Projects</h1>
+                <h1>{i18n.t('project.titleProject')}</h1>
                 <span>({selectProject}/{Projects.length})</span>
             </div>
             <div className="container-projects">
@@ -55,7 +56,7 @@ export default function SideBarProject({ Projects, setSelectProject ,selectProje
                                 <div className="interacao-project">
                                     <div className="item-interacao">
                                         <AiFillEye className="icon-interacao" />
-                                        <a target="_blank" rel="noreferrer" href={project.Link}>Visitar</a>
+                                        <a target="_blank" rel="noreferrer" href={project.Link}>{i18n.t('project.textVisit')}</a>
                                     </div>
 
                                     <div className="item-interacao">

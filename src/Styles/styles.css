@@ -51,7 +51,7 @@ header {
     font-family: 'Black Ops One';
     font-size: 32px;
     background: -webkit-linear-gradient(#eee, #595959);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -558,7 +558,7 @@ nav ul {
     font-size: 18px;
 }
 
-.academy-body p{
+.academy-body p {
     color: #797979;
 }
 
@@ -568,18 +568,18 @@ nav ul {
     filter: contrast(.5);
 }
 
-.col-academy-certification{
+.col-academy-certification {
     box-sizing: border-box;
     margin-left: 25px;
     height: 350px;
 }
 
-.item-carrosel img{
+.item-carrosel img {
     height: 355px;
     border-radius: 25px;
 }
 
-.legend{
+.legend {
     background-color: #3a3b3c !important;
 }
 
@@ -626,6 +626,11 @@ nav ul {
     margin: 5px;
     border-radius: 15px;
     cursor: pointer;
+    opacity: .8;
+}
+
+.sociales-item:hover {
+    opacity: 1;
 }
 
 .sociales-text {
@@ -671,14 +676,14 @@ nav ul {
     animation: rotategear infinite 2s;
 }
 
-.checkbox{
+.checkbox {
     opacity: 0;
     position: absolute;
     top: 0;
     left: 0;
 }
 
-.box-toggle{
+.box-toggle {
     position: relative;
     top: 0px;
     left: 0px;
@@ -694,7 +699,7 @@ nav ul {
     padding: 4px;
 }
 
-.indicator{
+.indicator {
     position: absolute;
     width: 35px;
     height: 35px;
@@ -703,17 +708,122 @@ nav ul {
     transition: .5s;
 }
 
-.icone-mode{
+.icone-mode {
     font-size: 20px;
     height: 20px;
     width: 20px;
     padding: 2px;
 }
 
-.checkbox:checked + .box-toggle .indicator {
-	transform: translateX(35px);
+.checkbox:checked+.box-toggle .indicator, .toggle-active {
+    transform: translateX(35px);
 }
 
+/* Resposive */
+
+.mobile {
+    display: none;
+}
+
+.menu-mobile {
+    font-size: 32px;
+    color: #00FF00;
+    cursor: pointer;
+}
+
+.invisible{
+    display: none;
+}
+
+.visible{
+    display: flex;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    .mobile .info-menu{
+        position: absolute;
+        top: 57px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        padding: 25px 0;
+        background-color: #797979;
+        border-radius: 0 0 25px 25px;
+    }
+
+    .mobile .info-menu ul{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #logo h1, #logo span {
+        font-size: large;
+    }
+
+    #about{
+        flex-direction: column;
+    }
+
+    .div-about-col-1 {
+        padding: 25px;
+    }
+
+    .about-col-1, .about-col-2 {
+       width: 100%;
+    }
+
+    .info-item-about h1{
+        font-size: xx-large;
+    }
+
+    .about-col-1-infos {
+        justify-content: space-around;
+    }
+
+    .info-item-about{
+        margin: 0;
+    }
+
+    .info-item-about span{
+        font-size: 12px;
+    }
+
+    .skill-body{
+        justify-content: center;
+    }
+
+    .about-col-2 {
+        display: block;
+        padding-bottom: 430px;
+    }
+
+    .container-skill {
+        padding: 25px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-body{
+        justify-content: center;
+    }
+
+}
 
 /*animações*/
 

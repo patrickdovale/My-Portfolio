@@ -4,6 +4,7 @@ import { FaReact, FaHtml5, FaCss3, FaJs, FaJava, FaInfinity, FaPencilRuler, FaNo
 import { SiCsharp, SiAdobephotoshop, SiMysql, SiPostgresql } from 'react-icons/si';
 import { FiFigma } from 'react-icons/fi';
 import { DiSqllite } from 'react-icons/di';
+import { i18n } from '../../translate/i18n';
 
 
 export default function Skill() {
@@ -136,7 +137,7 @@ export default function Skill() {
     <div id="skill">
       <div className="container">
         <div className="header-skill">
-          <h1>My Skills</h1>
+          <h1>{i18n.t('skill.titleSkill')}</h1>
         </div>
 
 

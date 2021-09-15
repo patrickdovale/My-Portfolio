@@ -2,6 +2,7 @@ import React from 'react';
 import MinhaFoto from '../../Assets/eu.png';
 import { ReactTypical } from '@deadcoder0904/react-typical';
 import { FaReact, FaHtml5, FaCss3 } from 'react-icons/fa';
+import { i18n } from '../../translate/i18n';
 
 export default function About({ Projects }) {
 
@@ -25,34 +26,26 @@ export default function About({ Projects }) {
             <div id="about">
                 <div className="about-col-1">
                     <div className="div-about-col-1">
-                        <p className="front-end-text">front end developer</p>
-
+                        <p className="front-end-text">{i18n.t('about.texts.textDeveloper')}</p>
                         <h1 className="title-about">
                             <ReactTypical
-                                steps={["Hello! I'm Patrick Vasconcellos!"]}
+                                steps={[i18n.t('about.texts.textSalute')]}
                                 wrapper="p"
                             /></h1>
                         <span className="description-about">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Duis hendrerit massa enim, in lobortis dui scelerisque id.
-                            Sed semper, magna quis blandit tempus, lacus purus iaculis quam,
-                            et fringilla est libero a sem. Phasellus tristique metus elementum
-                            nisi lacinia elementum vitae sed ligula. Donec mi lorem,
-                            condimentum a neque eget, interdum fermentum ipsum. In auctor
-                            sem vel risus dictum accumsan. Pellentesque vulputate varius
-                            odio sit amet fermentum.
+                            {i18n.t('about.texts.textAboutMe')}
                         </span>
                     </div>
 
                     <div className="about-col-1-infos">
                         <div className="info-item-about">
                             <h1>{currentAge()}</h1>
-                            <span>My Age</span>
+                            <span>{i18n.t('about.texts.textAge')}</span>
                         </div>
 
                         <div className="info-item-about">
                             <h1>{Projects.length}</h1>
-                            <span>projects on git</span>
+                            <span>{i18n.t('about.texts.textProjects')}</span>
                         </div>
                     </div>
 

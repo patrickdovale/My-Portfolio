@@ -1,5 +1,6 @@
 import React from 'react';
 import { AiFillEye, AiFillGithub } from 'react-icons/ai';
+import { i18n } from '../../translate/i18n';
 
 
 export default function ViewProject({ Projects, selectProject }) {
@@ -26,7 +27,7 @@ export default function ViewProject({ Projects, selectProject }) {
                     <div className="interacao-project">
                         <div className="item-interacao">
                             <AiFillEye className="icon-interacao" />
-                            <a target="_blank" rel="noreferrer" href={Projects[selectProject-1].Link}>Visitar</a>
+                            <a target="_blank" rel="noreferrer" href={Projects[selectProject-1].Link}>{i18n.t('project.textVisit')}</a>
                         </div>
 
                         <div className="item-interacao">

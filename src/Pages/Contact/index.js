@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaWhatsapp, FaInstagram, FaLinkedin, FaGithub, FaMailBulk } from 'react-icons/fa';
+import { i18n } from '../../translate/i18n';
 
 
 export default function Contact() {
@@ -7,8 +8,8 @@ export default function Contact() {
         <div id="contact">
             <div className="container">
                 <div className="text-contact">
-                    <h1>Conecte-se comigo e conheça-me</h1>
-                    <h3>#OpenToWork</h3>
+                    <h1>{i18n.t('contact.textCotactMe')}</h1>
+                    <h3>#{i18n.t('contact.textOpenToWork')}</h3>
                 </div>
                 <div className="sociais-contact">
                     <div className="box-sociales">
@@ -20,7 +21,7 @@ export default function Contact() {
                     </div>
 
                     <div className="sociales-text">
-                        <h3>Entre em contato para um bate-papo</h3>
+                        <h3>{i18n.t('contact.textMessageContact')}</h3>
                     </div>
                 </div>
             </div>

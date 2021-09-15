@@ -1,5 +1,6 @@
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
+import { i18n } from '../../translate/i18n';
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
@@ -35,30 +36,31 @@ export default function Academy() {
                 <div className="academy-container">
                     <div className="col-academy-education">
                         <div className="academy-head">
-                            <h3>Education</h3>
+                            <h3>{i18n.t('academy.titleEducation')}</h3>
                         </div>
+                        
 
                         <div className="academy-body">
                             <div className="academy-logo">
-                                <img src={"http://www.eterj.com.br/web/wp-content/uploads/2018/07/logo-eterj120.png"} alt="logo"></img>
+                                <img src={i18n.t('academy.highSchool.logo')} alt="logo" />
                             </div>
                             <div>
-                                <h4>Escola técnica do Rio de Janeiro</h4>
-                                <p>Janeiro de 2015 - Dezembro de 2018</p>
-                                <p>Rio de Janeiro - RJ</p>
-                                <p>Técnico em Informática</p>
+                                <h4>{i18n.t('academy.highSchool.college')}</h4>
+                                <p>{i18n.t('academy.highSchool.duration')}</p>
+                                <p>{i18n.t('academy.highSchool.location')}</p>
+                                <p>{i18n.t('academy.highSchool.course')}</p>
                             </div>
                         </div>
                         <div className="academy-body">
                             <div className="academy-logo">
-                                <img src={"https://estacio.br/assets/imgs/header/logo-black.svg"} alt="logo"></img>
+                                <img src={i18n.t('academy.college.logo')} alt="logo"></img>
                             </div>
                             <div>
-                                <h4>Estácio de Sá</h4>
-                                <p>Janeiro de 2019 - Dezembro de 2022</p>
-                                <p>Rio de Janeiro - RJ</p>
-                                <p>Sistema de Informação</p>
-                                <p>CR: 8.44</p>
+                                <h4>{i18n.t('academy.college.college')}</h4>
+                                <p>{i18n.t('academy.college.duration')}</p>
+                                <p>{i18n.t('academy.college.location')}</p>
+                                <p>{i18n.t('academy.college.course')}</p>
+                                <p>{i18n.t('academy.college.pr.namePR') +" "+ i18n.t('academy.college.pr.numberPR')}</p>
                             </div>
                         </div>
                     </div>
