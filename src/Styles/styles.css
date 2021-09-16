@@ -823,6 +823,36 @@ nav ul {
         justify-content: center;
     }
 
+    .project-colums {
+        flex-direction: column;
+    }
+
+    .academy-container {
+        flex-direction: column;
+    }
+
+    .project-col-2 {
+        padding: 0px 50px 50px 50px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .col-academy-education{
+        min-width: 0;
+        margin-bottom: 25px;
+    }
+
+    .container-projects-items {
+        padding: 0 25px;
+    }
+
+    .container-projects-item {
+        width: auto;
+    }
+
+    .academy-container{
+        padding: 25px;
+    }
 }
 
 /*animações*/
