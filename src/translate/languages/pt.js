@@ -15,7 +15,7 @@ const texts = {
                 texts: {
                     textDeveloper: "Desenvolvedor FRONT END",
                     textSalute: "Olá! Eu sou Patrick Vasconcellos!",
-                    textAboutMe: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis hendrerit massa enim, in lobortis dui scelerisque id. Sed semper, magna quis blandit tempus, lacus purus iaculis quam, et fringilla est libero a sem. Phasellus tristique metus elementum nisi lacinia elementum vitae sed ligula. Donec mi lorem, condimentum a neque eget, interdum fermentum ipsum. In auctor sem vel risus dictum accumsan. Pellentesque vulputate varius odio sit amet fermentum.",
+                    textAboutMe: "Com mais de 5 anos de estudo em informática, focando no desenvolvimento web nos últimos 2 anos. Estou cursando Sistema de Informação na Universidade e aprimoro minhas habilidades por meio de experiência pessoais e freelance. Minhas habilidades incluem React, React Native, CSS, JavaScript, Node, MySQL.",
                     textAge: "Anos",
                     textProjects: "Projetos no Git",
                 }

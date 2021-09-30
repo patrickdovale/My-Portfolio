@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { BsFillGearFill } from 'react-icons/bs';
-import { BsMoon, BsSun } from 'react-icons/bs';
+import curriculo from '../../Assets/curriculo-patrick-vasconcellos.pdf';
 
 export default function Control() {
 
-    const [controlSelect, setControlSelect] = useState(false);
+
+    const [controlSelect, setControlSelect] = useState(false)
+
 
     let isChecked = false;
     let isType = "language";
@@ -36,15 +38,7 @@ export default function Control() {
     return (
         <div className="box-control">
             <BsFillGearFill className="icon-controll" value={Language} onClick={() => !controlSelect ? setControlSelect(true) : setControlSelect(false)} />
-            <div className="box-options" style={controlSelect === true ? { display: 'block' } : { display: 'none' }}>
-                <div className="toggle">
-                    <input id="darkmode" type="checkbox" className="checkbox" onChange={e => handleChange(e)} value="darkMode" />
-                    <label className="box-toggle" type="label" for="darkmode">
-                        <BsSun className="icone-mode" />
-                        <BsMoon className="icone-mode" />
-                        <div className="indicator"></div>
-                    </label>
-                </div>
+            <div className="box-options" style={controlSelect === true ? { display: 'flex' } : { display: 'none' }}>
 
                 <div className="toggle">
                     <input id="language" type="checkbox" className="checkbox" onChange={e => handleChange(e)} value="language" />
@@ -54,7 +48,7 @@ export default function Control() {
                         <div className={`${Language === 'pt-BR' ? "toggle-active" : ""} indicator`}></div>
                     </label>
                 </div>
-                <a href="/">Baixar CV</a>
+                <a className="curriculo" href={curriculo} target="_blank" rel="noreferrer">curriculo</a>
             </div>
         </div>
     );

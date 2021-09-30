@@ -15,7 +15,7 @@ const texts = {
                 texts: {
                     textDeveloper: "FRONT END DEVELOPER",
                     textSalute: "Hello! I'm Patrick Vasconcellos!",
-                    textAboutMe: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis hendrerit massa enim, in lobortis dui scelerisque id. Sed semper, magna quis blandit tempus, lacus purus iaculis quam, et fringilla est libero a sem. Phasellus tristique metus elementum nisi lacinia elementum vitae sed ligula. Donec mi lorem, condimentum a neque eget, interdum fermentum ipsum. In auctor sem vel risus dictum accumsan. Pellentesque vulputate varius odio sit amet fermentum.",
+                    textAboutMe: "With more than 5 years of study in computer science, focusing on web development in the last 2 years. I am studying Information Systems at the University and I improve my skills through personal and freelance experience. My skills include React, React Native, CSS, JavaScript, Node, MySQL.",
                     textAge: "My Age",
                     textProjects: "Projects on Git",
                 }
