@@ -8,7 +8,6 @@ import Project from '../../Pages/Project';
 import Academy from '../../Pages/Academy';
 import Contact from '../../Pages/Contact';
 import Control from '../../Components/Control';
-// import Languagee from '../../Components/Language';
 
 import { FaReact, FaHtml5, FaCss3 } from 'react-icons/fa';
 
