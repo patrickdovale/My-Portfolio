@@ -5,9 +5,9 @@ import Main from './Pages/Main';
 
 function App() {
   return (
-    <BrowserRouter>
+    // <BrowserRouter>
       <Main />
-    </BrowserRouter>
+    // </BrowserRouter>
   )
 }
 
