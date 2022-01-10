@@ -1,7 +1,7 @@
 import React from 'react';
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail, AiOutlineWhatsApp } from 'react-icons/ai';
 import { BiMenu } from 'react-icons/bi';
-import { NavHashLink } from 'react-router-hash-link';
+// import { NavHashLink } from 'react-router-hash-link';
 import { useState } from 'react/cjs/react.development';
 import { i18n } from '../../translate/i18n';
 
@@ -28,11 +28,11 @@ export default function TopBar({ Scroll, text }) {
 
                     <nav>
                         <ul>
-                            <NavHashLink scroll={el => scrollWithOffset(el)} smooth activeClassName="menu-selected" to="#about" className={"item-nav"}>{i18n.t('nav.option.about')}</NavHashLink>
+                            {/* <NavHashLink scroll={el => scrollWithOffset(el)} smooth activeClassName="menu-selected" to="#about" className={"item-nav"}>{i18n.t('nav.option.about')}</NavHashLink>
                             <NavHashLink scroll={el => scrollWithOffset(el)} smooth activeClassName="menu-selected" to="#skill" className={"item-nav"}>{i18n.t('nav.option.skill')}</NavHashLink  >
                             <NavHashLink scroll={el => scrollWithOffset(el)} smooth activeClassName="menu-selected" to="#project" className={"item-nav"}>{i18n.t('nav.option.project')}</NavHashLink>
                             <NavHashLink scroll={el => scrollWithOffset(el)} smooth activeClassName="menu-selected" to="#academy" className={"item-nav"}>{i18n.t('nav.option.academy')}</NavHashLink>
-                            <NavHashLink scroll={el => scrollWithOffset(el)} smooth activeClassName="menu-selected" to="#contact" className={"item-nav"}>{i18n.t('nav.option.contact')}</NavHashLink>
+                            <NavHashLink scroll={el => scrollWithOffset(el)} smooth activeClassName="menu-selected" to="#contact" className={"item-nav"}>{i18n.t('nav.option.contact')}</NavHashLink> */}
                         </ul>
                     </nav>
 
@@ -68,11 +68,11 @@ export default function TopBar({ Scroll, text }) {
                     <div className={`info-menu ${menuMobile === false ? 'invisible' : 'visible'}`}>
                     <nav>
                         <ul>
-                            <NavHashLink scroll={el => scrollWithOffset(el)} smooth activeClassName="menu-selected" to="#about" className={"item-nav"}>{i18n.t('nav.option.about')}</NavHashLink>
+                            {/* <NavHashLink scroll={el => scrollWithOffset(el)} smooth activeClassName="menu-selected" to="#about" className={"item-nav"}>{i18n.t('nav.option.about')}</NavHashLink>
                             <NavHashLink scroll={el => scrollWithOffset(el)} smooth activeClassName="menu-selected" to="#skill" className={"item-nav"}>{i18n.t('nav.option.skill')}</NavHashLink  >
                             <NavHashLink scroll={el => scrollWithOffset(el)} smooth activeClassName="menu-selected" to="#project" className={"item-nav"}>{i18n.t('nav.option.project')}</NavHashLink>
                             <NavHashLink scroll={el => scrollWithOffset(el)} smooth activeClassName="menu-selected" to="#academy" className={"item-nav"}>{i18n.t('nav.option.academy')}</NavHashLink>
-                            <NavHashLink scroll={el => scrollWithOffset(el)} smooth activeClassName="menu-selected" to="#contact" className={"item-nav"}>{i18n.t('nav.option.contact')}</NavHashLink>
+                            <NavHashLink scroll={el => scrollWithOffset(el)} smooth activeClassName="menu-selected" to="#contact" className={"item-nav"}>{i18n.t('nav.option.contact')}</NavHashLink> */}
                         </ul>
                     </nav>
 
