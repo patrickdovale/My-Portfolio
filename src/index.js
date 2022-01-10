@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import TopBar from "./Components/TopBar";
+import About from "./Pages/About"
 
 // import App from "./App";
 
 ReactDOM.render(
   <React.StrictMode>
-    <TopBar />
+    <About />
   </React.StrictMode>,
   document.getElementById("root")
 );
