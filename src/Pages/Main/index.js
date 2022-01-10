@@ -150,12 +150,12 @@ function Main() {
   return (
     <div id="app">
       <TopBar Scroll={Scroll} />
-      {/* <About Projects={Projects} />
+      <About Projects={Projects} />
       <Skill />
       <Project Projects={Projects} />
       <Academy />
       <Contact />
-      <Control /> */}
+      <Control />
     </div>
   );
 }
