@@ -50,7 +50,7 @@ export default function SideBarProject({ Projects, setSelectProject ,selectProje
                             </div>
                             <div className="footer-project">
                                 <div className="tecnologias-project">
-                                    {project.Tecnologias.map(tecnologia => (tecnologia))}
+                                    {project.Tecnologias.map((tecnologia,i) => <React.Fragment key={i}>{tecnologia}</React.Fragment>)}
                                 </div>
 
                                 <div className="interacao-project">

@@ -42,7 +42,7 @@ export default function Control() {
 
                 <div className="toggle">
                     <input id="language" type="checkbox" className="checkbox" onChange={e => handleChange(e)} value="language" />
-                    <label className="box-toggle" type="label" for="language">
+                    <label className="box-toggle" type="label" htmlFor="language">
                         <img src="https://image.flaticon.com/icons/png/512/206/206597.png" alt="Bandeira Brasil" className="icone-mode" />
                         <img src="https://image.flaticon.com/icons/png/512/1887/1887107.png" alt="Bandeira EUA" className="icone-mode" />
                         <div className={`${Language === 'pt-BR' ? "toggle-active" : ""} indicator`}></div>
