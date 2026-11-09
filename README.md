@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# Portfólio — Patrick Vasconcellos do Vale
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Site pessoal atualizado para refletir minha atuação em **engenharia de software, front-end e produtos SaaS**.
 
-## Available Scripts
+O conteúdo destaca experiência na **Lina Open Finance** e o trabalho independente em **Beleziq** (pré-lançamento) e **Open Sell** (em desenvolvimento, repositório privado). Projetos de aprendizado e placeholders deixaram de ser a vitrine principal.
 
-In the project directory, you can run:
+## Destaques da interface
 
-### `npm start`
+- Identidade visual editorial com contraste, tipografia e hierarquia de informação.
+- Layout responsivo, menu mobile e navegação por âncoras.
+- Conteúdo em português e inglês, com preferência de idioma salva localmente.
+- Navegação por teclado, `skip link`, foco visível, HTML semântico e suporte a `prefers-reduced-motion`.
+- Metadados para SEO e compartilhamento, JSON-LD de pessoa e favicon próprio.
+- Conteúdo editorial centralizado em `src/data/portfolioContent.js`.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Estrutura
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+| Caminho | Responsabilidade |
+| --- | --- |
+| `src/Pages/Portfolio2026/index.js` | Nova página, componentes e interações |
+| `src/data/portfolioContent.js` | Textos, projetos e histórico em PT/EN |
+| `src/Styles/portfolio-2026.css` | Design system visual e responsividade |
+| `src/App.js` | Ponto de entrada da nova interface |
+| `public/index.html` | Metadados e SEO |
+| `src/Pages/Main`, `src/Components` e outras pastas antigas | Implementação anterior, preservada por enquanto |
 
-### `npm test`
+## Executar localmente
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm install
+npm start
+```
 
-### `npm run build`
+O app ficará disponível em `http://localhost:3000`. Para criar a versão de produção:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm run build
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Estado da modernização
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Este repositório nasceu em 2022 com **Create React App 4 e React 17**. A revisão atual prioriza visual, acessibilidade e posicionamento profissional sem misturar essa mudança com uma migração arriscada de dependências.
 
-### `npm run eject`
+**Próximos passos técnicos:** migrar para Vite/TypeScript e versão suportada de React, remover componentes e assets legados, atualizar dependências, criar testes automatizados e validar o build/SEO no deploy de preview.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+> A mudança atual está sendo revisada em uma branch. Nenhum deploy de produção é necessário para avaliá-la no código.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Privacidade e conteúdo
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- **Lina:** apenas informações gerais e públicas da atuação profissional; sem código ou dados internos.
+- **Beleziq:** funcionalidades e integrações descritas como parte de produto em preparação; não como funcionalidades já lançadas.
+- **Open Sell:** repositório privado, sem link para código.
+- Nenhuma métrica de negócio, certificação ou título profissional foi inventado.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Contato
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[GitHub](https://github.com/patrickdovale) · [LinkedIn](https://www.linkedin.com/in/patrickdovale/) · [E-mail](mailto:patrickdovale1@hotmail.com)
