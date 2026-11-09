@@ -47,6 +47,19 @@ export const portfolioContent = {
         cta: null,
         palette: "lavender"
       }
+,
+      {
+        number: "03",
+        name: "BetDetox",
+        kind: "EXTENSÃO CHROME · Produto publicado",
+        status: "Disponível na Chrome Web Store",
+        description: "Extensão independente que ajuda a criar barreiras contra sites de apostas, com bloqueio por domínios, pausa com modo SOS e acompanhamento local de tentativas bloqueadas.",
+        challenge: "Construir regras de bloqueio com Manifest V3 e armazenamento local, equilibrando proteção, privacidade e clareza na experiência de uso.",
+        tags: ["React", "TypeScript", "Vite", "Manifest V3", "Chrome APIs"],
+        link: "https://chromewebstore.google.com/detail/betdetox-bloqueador-de-ap/hheikdfbpbgilhojajgcodmpfejoplag",
+        cta: "Ver na Chrome Web Store",
+        palette: "cyan"
+      }
     ],
     caseLabel: "Desafio técnico",
     privateLabel: "Código privado · detalhes públicos limitados",
@@ -139,6 +152,19 @@ export const portfolioContent = {
         link: null,
         cta: null,
         palette: "lavender"
+      }
+,
+      {
+        number: "03",
+        name: "BetDetox",
+        kind: "CHROME EXTENSION · Published product",
+        status: "Available on Chrome Web Store",
+        description: "An independent browser extension that helps people add friction to gambling websites, with domain blocking, SOS pauses and local statistics of blocked attempts.",
+        challenge: "Building blocking rules with Manifest V3 and on-device storage while balancing protection, privacy and clear user experience.",
+        tags: ["React", "TypeScript", "Vite", "Manifest V3", "Chrome APIs"],
+        link: "https://chromewebstore.google.com/detail/betdetox-bloqueador-de-ap/hheikdfbpbgilhojajgcodmpfejoplag",
+        cta: "View on Chrome Web Store",
+        palette: "cyan"
       }
     ],
     caseLabel: "Engineering challenge",
