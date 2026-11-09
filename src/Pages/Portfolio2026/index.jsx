@@ -6,6 +6,10 @@ import {
 } from "react-icons/fi";
 import { portfolioContent } from "../../data/portfolioContent";
 import "../../Styles/portfolio-2026.css";
+import portrait from "../../Assets/eu.png";
+import carouselGif from "../../Assets/carrosel.gif";
+import netflixGif from "../../Assets/netflix.gif";
+import portfolioGif from "../../Assets/portifolio.gif";
 
 const EMAIL = "patrickdovale1@hotmail.com";
 const GITHUB_URL = "https://github.com/patrickdovale";
@@ -84,6 +88,7 @@ export default function Portfolio2026() {
   const navItems = [
     { href: "#about", label: copy.nav.about },
     { href: "#work", label: copy.nav.work },
+    { href: "#journey", label: language === "pt" ? "Evolução" : "Journey" },
     { href: "#projects", label: copy.nav.projects },
     { href: "#expertise", label: copy.nav.expertise },
     { href: "#contact", label: copy.nav.contact }
@@ -130,7 +135,7 @@ export default function Portfolio2026() {
               </div>
               <div className="hero-footnote"><span className="signal-dot" /> React · Next.js · TypeScript · Product Engineering</div>
             </div>
-            <div className="hero-visual" aria-label={copy.snapshotTitle}>
+            <div className="hero-visual" aria-label={copy.snapshotTitle}><div className="portrait-frame"><img src={portrait} alt="Patrick do Vale — foto do portfólio original" /><span>{language === "pt" ? "A mesma pessoa. Novos desafios." : "Same person. New challenges."}</span></div>
               <div className="architecture-window">
                 <div className="window-heading">
                   <div className="window-dots" aria-hidden="true"><span /><span /><span /></div>
@@ -204,6 +209,19 @@ export default function Portfolio2026() {
           </div>
         </section>
 
+
+<section className="journey-section section-pad" id="journey" aria-labelledby="journey-heading">
+<div className="layout-container">
+<div className="section-heading"><div><span className="section-index">04 / THEN & NOW</span><p className="section-kicker">{language === "pt" ? "MINHA EVOLUÇÃO" : "MY JOURNEY"}</p><h2 id="journey-heading">{language === "pt" ? "Não comecei construindo SaaS." : "I didn't start by building SaaS."}</h2></div><p>{language === "pt" ? "Comecei aprendendo, errando, criando clones e experimentando interfaces. Esses projetos fazem parte da minha história." : "I started by learning, making mistakes, building clones and experimenting with interfaces. These projects are part of my story."}</p></div>
+<div className="journey-steps"><div><span>2022</span><strong>{language === "pt" ? "Meu primeiro portfólio" : "My first portfolio"}</strong><p>React, CSS, animações, curiosidade.</p></div><div><span>2026</span><strong>{language === "pt" ? "Produtos reais" : "Real products"}</strong><p>Lina Open Finance, Beleziq, Open Sell.</p></div></div>
+<div className="legacy-grid">
+{[
+{ title: "Carrossel", image: carouselGif, url: "https://github.com/patrickdovale/Carrosel", detail: "React · HTML · CSS" },
+{ title: "Netflix Clone", image: netflixGif, url: "https://github.com/patrickdovale/Netflix_Clone_React", detail: "React · TMDB API" },
+{ title: language === "pt" ? "Meu portfólio de 2022" : "My 2022 portfolio", image: portfolioGif, url: "https://github.com/patrickdovale/My-Portfolio/tree/f0710b012d58ed22500a6344e5b2b052b9702cf3", detail: "React · CSS · Design pessoal" }
+].map(project => <article className="legacy-card" key={project.url}><img src={project.image} alt={project.title} loading="lazy" /><div><h3>{project.title}</h3><p>{project.detail}</p><ExternalAnchor href={project.url} className="text-link">{language === "pt" ? "Ver código original" : "View original code"} <FiArrowUpRight aria-hidden="true" /></ExternalAnchor></div></article>)}
+</div><p className="journey-note">{language === "pt" ? "Preferi preservar os projetos que me ensinaram a programar a fingir que comecei pronto." : "I'd rather keep the projects that taught me to code than pretend I started with everything figured out."}</p>
+</div></section>
         <section className="contact-section section-pad" id="contact" aria-labelledby="contact-heading">
           <div className="layout-container contact-grid">
             <div><span className="section-index">05 / SAY HELLO</span><p className="section-kicker">{copy.contactEyebrow}</p><h2 id="contact-heading">{copy.contactTitle}</h2><p>{copy.contactText}</p></div>
