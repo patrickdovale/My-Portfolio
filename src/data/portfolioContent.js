@@ -46,8 +46,7 @@ export const portfolioContent = {
         link: null,
         cta: null,
         palette: "lavender"
-      }
-,
+      },
       {
         number: "03",
         name: "BetDetox",
@@ -152,8 +151,7 @@ export const portfolioContent = {
         link: null,
         cta: null,
         palette: "lavender"
-      }
-,
+      },
       {
         number: "03",
         name: "BetDetox",
