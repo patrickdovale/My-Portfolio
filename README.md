@@ -1,56 +1,60 @@
 # Portfólio — Patrick Vasconcellos do Vale
 
-Site pessoal atualizado para refletir minha atuação em **engenharia de software, front-end e produtos SaaS**.
+Portfólio profissional focado em engenharia de software, experiência com produtos financeiros e construção de plataformas SaaS. Apresenta o trabalho na Lina e os produtos independentes Beleziq (pré-lançamento) e Open Sell (desenvolvimento privado).
 
-O conteúdo destaca experiência na **Lina Open Finance** e o trabalho independente em **Beleziq** (pré-lançamento) e **Open Sell** (em desenvolvimento, repositório privado). Projetos de aprendizado e placeholders deixaram de ser a vitrine principal.
+## Stack e publicação
 
-## Destaques da interface
-
-- Identidade visual editorial com contraste, tipografia e hierarquia de informação.
-- Layout responsivo, menu mobile e navegação por âncoras.
-- Conteúdo em português e inglês, com preferência de idioma salva localmente.
-- Navegação por teclado, `skip link`, foco visível, HTML semântico e suporte a `prefers-reduced-motion`.
-- Metadados para SEO e compartilhamento, JSON-LD de pessoa e favicon próprio.
-- Conteúdo editorial centralizado em `src/data/portfolioContent.js`.
-
-## Estrutura
-
-| Caminho | Responsabilidade |
-| --- | --- |
-| `src/Pages/Portfolio2026/index.js` | Nova página, componentes e interações |
-| `src/data/portfolioContent.js` | Textos, projetos e histórico em PT/EN |
-| `src/Styles/portfolio-2026.css` | Design system visual e responsividade |
-| `src/App.js` | Ponto de entrada da nova interface |
-| `public/index.html` | Metadados e SEO |
-| `src/Pages/Main`, `src/Components` e outras pastas antigas | Implementação anterior, preservada por enquanto |
+- **React 19** com **Vite 8** e JavaScript/JSX.
+- **React Icons**, CSS responsivo e conteúdo em português e inglês.
+- **Netlify:** build `npm run build`, diretório `dist/` e Node 22; configuração versionada em `netlify.toml`.
+- **CI:** GitHub Actions instala dependências usando `npm ci` e executa `npm run build`.
+- `package-lock.json` regenerado para permitir instalações reproduzíveis.
 
 ## Executar localmente
 
+Requer Node.js 22.12 ou posterior.
+
 ```bash
-npm install
-npm start
+npm ci
+npm run dev
 ```
 
-O app ficará disponível em `http://localhost:3000`. Para criar a versão de produção:
+O Vite disponibiliza a aplicação normalmente em `http://localhost:5173`.
 
 ```bash
 npm run build
+npm run preview
 ```
 
-### Estado da modernização
+O build produz os arquivos estáticos em `dist/`, diretório publicado pelo Netlify.
 
-Este repositório nasceu em 2022 com **Create React App 4 e React 17**. A revisão atual prioriza visual, acessibilidade e posicionamento profissional sem misturar essa mudança com uma migração arriscada de dependências.
+## Estrutura principal
 
-**Próximos passos técnicos:** migrar para Vite/TypeScript e versão suportada de React, remover componentes e assets legados, atualizar dependências, criar testes automatizados e validar o build/SEO no deploy de preview.
+| Caminho | Responsabilidade |
+| --- | --- |
+| `index.html` | Metadados, SEO e entrada Vite |
+| `src/main.jsx` | Montagem do React 19 |
+| `src/App.jsx` | Roteamento principal para o portfólio |
+| `src/Pages/Portfolio2026/index.jsx` | Interface e componentes |
+| `src/data/portfolioContent.js` | Conteúdo PT/EN e projetos |
+| `src/Styles/portfolio-2026.css` | Layout, estilos e responsividade |
+| `vite.config.js` | Plugin React e configuração do build |
+| `netlify.toml` | Configuração do deploy estático |
+| `.github/workflows/portfolio-build.yml` | CI da instalação e build |
 
-> A mudança atual está sendo revisada em uma branch. Nenhum deploy de produção é necessário para avaliá-la no código.
+## Características
 
-## Privacidade e conteúdo
+- Visual editorial escuro com seções de projetos, experiência profissional, competências e contato.
+- Layout responsivo, navegação por âncoras e alternância PT/EN com preferência local.
+- Acessibilidade básica: navegação por teclado, skip link, foco visível, elementos semânticos e preferência de movimento reduzido.
+- Metadados Open Graph, JSON-LD e favicon vetorial.
+- Dados profissionais apresentados sem métricas inventadas; conteúdos privados e corporativos protegidos.
 
-- **Lina:** apenas informações gerais e públicas da atuação profissional; sem código ou dados internos.
-- **Beleziq:** funcionalidades e integrações descritas como parte de produto em preparação; não como funcionalidades já lançadas.
-- **Open Sell:** repositório privado, sem link para código.
-- Nenhuma métrica de negócio, certificação ou título profissional foi inventado.
+## Histórico e próximos passos
+
+Este projeto começou em 2022 com React 17 e Create React App 4. Em novembro de 2026 recebeu uma reformulação de conteúdo e visual, seguida de migração para React 19 + Vite 8 para corrigir problemas de instalação e deploy.
+
+O código legado ainda permanece em pastas não importadas. Melhorias futuras: limpeza dos componentes e assets antigos, TypeScript, testes de navegação e de acessibilidade, imagens reais dos cases e revisão visual em dispositivos físicos.
 
 ## Contato
 
