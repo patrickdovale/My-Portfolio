@@ -5,6 +5,7 @@ import {
   FiMail, FiMenu, FiShield, FiX
 } from "react-icons/fi";
 import { portfolioContent } from "../../data/portfolioContent";
+import GitHubTimeline from "../../Components/GitHubTimeline";
 import "../../Styles/portfolio-2026.css";
 import portrait from "../../Assets/eu.png";
 import carouselGif from "../../Assets/carrosel.gif";
@@ -91,6 +92,7 @@ export default function Portfolio2026() {
     { href: "#journey", label: language === "pt" ? "Evolução" : "Journey" },
     { href: "#projects", label: copy.nav.projects },
     { href: "#expertise", label: copy.nav.expertise },
+    { href: "#github-timeline", label: "GitHub" },
     { href: "#contact", label: copy.nav.contact }
   ];
 
@@ -222,6 +224,7 @@ export default function Portfolio2026() {
 ].map(project => <article className="legacy-card" key={project.url}><img src={project.image} alt={project.title} loading="lazy" /><div><h3>{project.title}</h3><p>{project.detail}</p><ExternalAnchor href={project.url} className="text-link">{language === "pt" ? "Ver código original" : "View original code"} <FiArrowUpRight aria-hidden="true" /></ExternalAnchor></div></article>)}
 </div><p className="journey-note">{language === "pt" ? "Preferi preservar os projetos que me ensinaram a programar a fingir que comecei pronto." : "I'd rather keep the projects that taught me to code than pretend I started with everything figured out."}</p>
 </div></section>
+        <GitHubTimeline language={language} />
         <section className="contact-section section-pad" id="contact" aria-labelledby="contact-heading">
           <div className="layout-container contact-grid">
             <div><span className="section-index">05 / SAY HELLO</span><p className="section-kicker">{copy.contactEyebrow}</p><h2 id="contact-heading">{copy.contactTitle}</h2><p>{copy.contactText}</p></div>
