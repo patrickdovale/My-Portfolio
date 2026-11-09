@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Portfólio — Patrick Vasconcellos do Vale
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Portfólio profissional focado em engenharia de software, experiência com produtos financeiros e construção de plataformas SaaS. Apresenta o trabalho na Lina e os produtos independentes Beleziq (pré-lançamento) e Open Sell (desenvolvimento privado).
 
-## Available Scripts
+## Stack e publicação
 
-In the project directory, you can run:
+- **React 19** com **Vite 8** e JavaScript/JSX.
+- **React Icons**, CSS responsivo e conteúdo em português e inglês.
+- **Netlify:** build `npm run build`, diretório `dist/` e Node 22; configuração versionada em `netlify.toml`.
+- **CI:** GitHub Actions instala dependências usando `npm ci` e executa `npm run build`.
+- `package-lock.json` regenerado para permitir instalações reproduzíveis.
 
-### `npm start`
+## Executar localmente
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Requer Node.js 22.12 ou posterior.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```bash
+npm ci
+npm run dev
+```
 
-### `npm test`
+O Vite disponibiliza a aplicação normalmente em `http://localhost:5173`.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm run build
+npm run preview
+```
 
-### `npm run build`
+O build produz os arquivos estáticos em `dist/`, diretório publicado pelo Netlify.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Estrutura principal
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| Caminho | Responsabilidade |
+| --- | --- |
+| `index.html` | Metadados, SEO e entrada Vite |
+| `src/main.jsx` | Montagem do React 19 |
+| `src/App.jsx` | Roteamento principal para o portfólio |
+| `src/Pages/Portfolio2026/index.jsx` | Interface e componentes |
+| `src/data/portfolioContent.js` | Conteúdo PT/EN e projetos |
+| `src/Styles/portfolio-2026.css` | Layout, estilos e responsividade |
+| `vite.config.js` | Plugin React e configuração do build |
+| `netlify.toml` | Configuração do deploy estático |
+| `.github/workflows/portfolio-build.yml` | CI da instalação e build |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Características
 
-### `npm run eject`
+- Visual editorial escuro com seções de projetos, experiência profissional, competências e contato.
+- Layout responsivo, navegação por âncoras e alternância PT/EN com preferência local.
+- Acessibilidade básica: navegação por teclado, skip link, foco visível, elementos semânticos e preferência de movimento reduzido.
+- Metadados Open Graph, JSON-LD e favicon vetorial.
+- Dados profissionais apresentados sem métricas inventadas; conteúdos privados e corporativos protegidos.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Histórico e próximos passos
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Este projeto começou em 2022 com React 17 e Create React App 4. Em novembro de 2026 recebeu uma reformulação de conteúdo e visual, seguida de migração para React 19 + Vite 8 para corrigir problemas de instalação e deploy.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+O código legado ainda permanece em pastas não importadas. Melhorias futuras: limpeza dos componentes e assets antigos, TypeScript, testes de navegação e de acessibilidade, imagens reais dos cases e revisão visual em dispositivos físicos.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Contato
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[GitHub](https://github.com/patrickdovale) · [LinkedIn](https://www.linkedin.com/in/patrickdovale/) · [E-mail](mailto:patrickdovale1@hotmail.com)
