@@ -56,6 +56,10 @@ Este projeto começou em 2022 com React 17 e Create React App 4. Em novembro de 
 
 O código legado ainda permanece em pastas não importadas. Melhorias futuras: limpeza dos componentes e assets antigos, TypeScript, testes de navegação e de acessibilidade, imagens reais dos cases e revisão visual em dispositivos físicos.
 
+## Publicação
+
+A versão de produção é publicada a partir da branch `main` no Netlify. Pull requests geram deploys de preview separados; para produção, é necessário um commit sem diretivas de pular o CI e confirmar a publicação no painel do Netlify.
+
 ## Contato
 
 [GitHub](https://github.com/patrickdovale) · [LinkedIn](https://www.linkedin.com/in/patrickdovale/) · [E-mail](mailto:patrickdovale1@hotmail.com)
